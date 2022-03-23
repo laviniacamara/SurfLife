@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SurfLife</title>
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/*Os links acima são fontes de letras exportadas pelo site google fonts por meio de uma extensão*/
+
+*{    
+    background-image: url(img/surff.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 80px;
+    /*overflow-x: hidden*/ 
+    
+    /* "overflow: hidden" essa propriedade serve para esconder certa orientação do seu navegador, por exemplo, se o valor for
+    overflow-x: hidden todo o eixo x permanecerá escondido em seu navegador, caso você não informe o eixo especifico o overflow: hidden
+    esconderá a página em ambos eixos*/
+    
+    /* "background-size" serve basicamente para definir o tamanho do seu background*/ 
+    
+  }
+  
+  #cabecalho{
+    overflow: hidden;
+    
+    /* "overflow: hidden" essa propriedade serve para esconder certa orientação do seu navegador, por exemplo, se o valor for
+    overflow-x: hidden todo o eixo x permanecerá escondido em seu navegador, caso você não informe o eixo especifico o overflow: hidden
+    esconderá a página em ambos eixos*/
+    
+  }
+   
+  #cabecalho img{
+    height: 60px;
+    position: relative;
+    top: 5px;
+    left: 600px;
+    overflow-y: hidden;
+    
+    /* "overflow: hidden" essa propriedade serve para esconder certa orientação do seu navegador, por exemplo, se o valor for
+    overflow-x: hidden todo o eixo x permanecerá escondido em seu navegador, caso você não informe o eixo especifico o overflow: hidden
+    esconderá a página em ambos eixos*/
+  }
+  
+  
+  #menu{
+    position: relative;
+	top:18px;
+	font-family: Raleway;
+	font-size: 25px;
+	margin: auto; 
+    text-align: center;
+    
+    /* "text-align: center" serve para alinhar os elementos dentro de certo comando no centro. Podendo variar de acordo com o valor
+    atribuido*/
+	
+  }
+  
+  #menu a {
+	margin-right: 50px;
+	color: #2F4F4F;
+	background-image: none;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 400;
+}
+
+#sobre{
+  font-family: Oswald, sans-serif;
+  font-size: 40px;
+  background-image: none;
+  margin-left: 30px;
+  position: relative;
+  top: 750px;
+}
+
+#surf{
+  
+  font-family: Raleway;
+ font-weight: 500;
+  margin-left: 60px;
+  margin-right: 900px;
+  background-image: none;
+  position: relative;
+  top: 750px;
+}
+
+#surf p {
+  background-image: none;
+  color: #2F4F4F;
+}
+
+
+#image{
+  background-color: none;
+  float: left;
+  position: relative;
+  left: 500px;
+  bottom: 450px;
+  top: 290px;
+  
+}
+
+#image img{
+  height: 450px;
+}
+
+#news{
+  font-family: Oswald, sans-serif;
+  font-size: 40px;
+  background-image: none;
+  margin-left: 30px;
+  position: relative;
+  top: 750px;
+  
+}
+
+#medinabw{
+  float: right;
+  background-image: none;
+  position: relative;
+  bottom: 445px;
+  top: 295px;
+}
+
+#medinabw img{
+  height: 440px;
+  
+}
+
+#italo{
+ background-image: none;
+ position: relative;
+ top: 400px;
+ width: 430px;
+}
+
+#italo img{
+  height: 300px;
+  position: relative;
+  left: 25px;
+}
+
+#italo p {
+  font-family: Raleway;
+  font-weight: 400;
+  background-image: none;
+  position: relative;
+  left: 45px;
+}
+
+#italo a{
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 400;
+  background-image: none;
+  color: #B8860B;
+  position: relative;
+  left: 45px;
+}
+
+
+#y{
+  color: #DAA520;
+  font-family: Oswald, sans-serif;
+  font-size: 25px;
+}
+
+#medina{
+  width: 430px;
+  background-image: none;
+  position: relative;
+  left: 600px;
+  right: 300px;
+  top: -280px;
+}
+
+#medina img{
+  height: 300px;
+  
+}
+
+#medina p {
+  font-family: Raleway;
+  font-weight: 400;
+  background-image: none;
+}
+
+#medina a{
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 400;
+  background-image: none;
+  color: #4682B4;
+}
+#b{
+  color: #4682B4;
+  font-family: Oswald, sans-serif;
+  font-size: 25px;
+}
+
+#back{
+  background-image: none;
+  margin-top: -1760px;
+  margin-left: 1160px;
+  
+}
+
+#back2{
+  background-image: none;
+  position: relative;
+  margin-top: -762px;
+  margin-left: 30px;
+}
+
+#bateria{
+  font-family: Oswald, sans-serif;
+  font-size: 40px;
+  background-image: none;
+  margin-left: 30px;
+  position: relative;
+  bottom: 1630px;
+  left: 900px;
+}
+
+
+#teap{
+  background-image: none;
+  position: relative;
+  top: -160px;
+  margin-left: 200px;
+}
+
+#teap img{
+  height: 600px;
+  background-image: none;
+}
+
+#rodapeTH{
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  width: 150px;
+  background-image: none;
+  margin-left: 1150px;
+  margin-top: 225px;
+}
+
+#text{
+  font-family: Oswald, sans-serif;
+  font-size: 40px;
+  background-image: none;
+  margin-left: 30px;
+  max-width: 400px;
+  position: relative;
+  left: 180px;
+  
+  /* "max-width" como o próprio nome diz essa propiedade informa a largura máxima de certo elemento*/
+}
+
+#text p {
+  background-image: none;
+}
+
+#text span p {
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: -20px;
+  max-width: 230px;
+  
+  /* "max-width" como o próprio nome diz essa propiedade informa a largura máxima de certo elemento*/
+}
+
+#card{
+  border: 3px solid #434343;
+  padding: 30px;
+  max-width: 250px;
+  min-height: 280px;
+  position: relative;
+  margin-left: 650px;
+  margin-top: -300px;
+  background-color: #434343;
+  background-image: none;
+  border-radius: 5px;
+  
+  /* "max-width" como o próprio nome diz essa propiedade informa a largura máxima de certo elemento*/
+  /* "min-height" serve para informar a altura minima de certo elemento*/
+  /* "border-radius" já essa propiedade serve para informar o grau de arredondamento de certo elemento em sua página*/
+}
+
+#card img{
+  background-image: none;
+  height: 55px;
+  position: relative;
+  left: 60px;
+  top: -5px;
+}
+
+#card h3{
+  font-family: Poppins;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  
+  /* "text-align: center" serve para alinhar os elementos dentro de certo comando no centro. Podendo variar de acordo com o valor
+    atribuido*/
+}
+
+#card span h3{
+  position: relative;
+  top:-5px;
+}
+
+#card ul{
+  list-style-type: circle;
+  background-image: none;
+  color: #D3D3D3;
+  position: relative;
+  right: 15px;
+  
+  /* "list-style-type" serve para definir o marcador dos items da sua lista, por exemplo, nesse caso vai ser o valor "circle", mas
+  a igualdade poderia ser um quadrado, circulo preenchido e etc.*/
+}
+
+#card a img{
+  height: 50px;
+  position: relative;
+  left: 60px;
+}
+
+
+#card2{
+  border: 3px solid #434343;
+  padding: 30px;
+  max-width: 250px;
+  min-height: 280px;
+  position: relative;
+  margin-left: 950px;
+  margin-top: -368px;
+  background-color: #434343;
+  background-image: none;
+  border-radius: 5px;
+  
+  /* "max-width" como o próprio nome diz essa propiedade informa a largura máxima de certo elemento*/
+  /* "min-height" serve para informar a altura minima de certo elemento*/
+  /* "border-radius" já essa propiedade serve para informar o grau de arredondamento de certo elemento em sua página*/
+}
+
+#card2 img{
+  background-image: none;
+  height: 55px;
+  position: relative;
+  left: 60px;
+  top: -5px;
+}
+
+#card2 h3{
+  font-family: Poppins;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+
+#card2 span h3{
+  position: relative;
+  top:-5px;
+}
+
+#card2 ul{
+  list-style-type: circle;
+  background-image: none;
+  color: #D3D3D3;
+  position: relative;
+  right: 15px;
+  
+  /* "list-style-type" serve para definir o marcador dos items da sua lista, por exemplo, nesse caso vai ser o valor "circle", mas
+  a igualdade poderia ser um quadrado, circulo preenchido e etc.*/
+}
+
+#card2 a img{
+  height: 50px;
+  position: relative;
+  left: 60px;
+}
+
+a:hover{
+  background-color: #ccc;
+}
+
+#final{
+  margin-left: 1170px;
+}
+
+#menu #dropdownMenuButton1{
+  position: relative;
+  margin-left: 530px;
+  margin-top: -70px;
+  outline: none;
+}
+
+#menu .dropdown-menu  {
+  background-image: none;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<div id = "cabecalho">
+  <img src = "img/nome.png"/>
+</div>
+
+<div id = "menu">
+  <a href = "#sobre">Sobre</a>
+     
+  <a href = "#news">News</a>
+  
+  <a href = "registro.html" 
+     target = "_blank">Registro</a>
+     
+  <a href = "sorteio.html" 
+     target = "_blank">Sorteio</a>
+     
+   <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Bootstrap
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="p1.html" target = "_blank">Página 1</a></li>
+    <li><a class="dropdown-item" href="p2.html" target = "_blank">Página 2</a></li>
+    <li><a class="dropdown-item" href="p3.html" target = "_blank">Página 3</a></li>
+  </ul>
+</div>
+     
+     
+</div>
+
+
+<div id = "sobre">
+  <p>O QUE É SURF???</p>
+</div>
+
+
+<div id = "surf">
+  <p>Surf é um esporte individual, radical, praticado no mar. No surfe, o desafio
+  é se manter o maior tempo possível em pé sob uma prancha, deslizando sob as ondas 
+  e realizando manobras radicais, com vários níveis de dificuldade.</p>
+  
+  <p>Atualmente, o surf é um dos esportes que mais vem crescendo pelo mundo, na verdade 
+  não se sabe a real origem do surf mas que esse esporte vem conquitando milhares de adpetos
+  pelo mundo isso é verdade. Hoje, um dos lugares que mais "respiram surf" é o estado estadunidense
+  Hawaii, possuindo umas das melhores ondas e surfistas do mundo. O ponto mais famoso do Hawaii e do mundo
+  é no North Shore de Oahu, a famosa PipeLine.</p>
+  
+</div>
+
+<div id = "image">
+  <img src = "img/pipee.jpg"/>
+</div>
+
+<div id = medinabw>
+  <img src = "img/gabriel.jpg"/>
+</div>
+
+<div id = "news">
+  <p>NOTICÍAS</p>
+</div>
+
+<div id = "italo">
+  <img src = "img/italo.jpg"/>
+  <p><span id = y>É OURO!!!</span> O Campeão Mundial de Surf Italo Ferreira conquista a primeira medalha 
+  de ouro nos Jogos Olímpicos para o Brasil e pra ficar mais ainda histórico 
+  Italo foi o primeiro a conquistar uma medalha de ouro no esporte Surf, já que essa era
+  a primeira vez que o esporte foi incluido em uma Olimpiada.</p>
+  
+  <p>Italo, atleta riograndense, 
+  contou em uma entrevista logo após sua conquista suas vitórias e dificuldade que enfrentou
+  na carreira, emocionando milhares de pessoas de expectadores. Italo postou em seu canal
+  do YouTube um vídeo de como foi suas 48 HORAS SEM DORMIR após a conquista de sua medalha, 
+  clique no link abaixo para assistir :</p>
+  
+  <a href = "https://www.youtube.com/watch?v=ynP_LnssCl4"
+     target = "_blank">48h SEM DORMIR PÓS MEDALHA - ITALO FERREIRA</a>
+</div>
+
+<div id = "medina">
+  <img src = "img/medinan.jpg"/>
+  <p><span id = b>TRICAMPEÃO MUNDIAL!!!</span> Esse mês o surfista brasileiro Gabriel Medina conquistou seu terceiro
+  título de Melhor Surfista do Mundo, conquistando o tão desejado trófeu da WSL (World Surf League).
+  Gabriel que fez uma das melhores temporadas da sua carreira conseguiu o tricampeoneto numa bateria contra
+  o também brasileiro Filipe Toledo, na praia de Trestles, San Clemente CA.</p>
+  
+  <p>Gabriel que passou por difíceis momentos familiares e chegou a pensar em não particar do tour essa temporada
+  deu a volta por cima e levou pra casa mais um título Mundial. Grande parte do seu apoio ele afirma que veio da 
+  esposa, Yasmin Brunet, que o ajudou a não desistir e esteve com ele todas as etapas do Tour WSL 2021. 
+  Para saber mais clique no link abaixo : </p>
+  
+  <a href = "https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2021/09/14/tricampeao-mundial-de-surfe-conheca-a-trajetoria-do-surfista-gabriel-medina.ghtml"
+     target = "_blank">TRICAMPEÃO MUNDIAL - GABRIEL MUNDIAL</a>
+</div>
+
+<div id = "teap">
+  <img src = "img/ttp.jpg"/>
+</div>
+
+<div id = "back2">
+  <img src = "img/ss.jpg"/>
+</div>
+
+<div id = "back">
+  <img src = "img/ss3.jpg"/>
+</div>
+
+<div id = "rodapeTH">
+  <p>Uma das maiores e mais perigosas ondas do mundo. Teahupoo, Tahiti.</p>
+</div>
+
+<div id = "text">
+  <p>JÁ PENSOU QUE VOCÊ PODE SER O PRÓXIMO CAMPEÃO DO SURF??</p>
+  <span><p>Quer sabe como conseguir isso? Registre-se nos links ao lado e receba as vantagens em ser VIP. Diversas aulas, conteúdo exclusivo e muito mais. Aproveite</p></span>
+</div>
+
+<div id = "card">
+  <img src = "img/email.png"/>
+  <h3>Receba conteúdos exclusivos por email.</h3>
+  <ul>
+    <li>- Lives Fechadas</li>
+    <li>- Dicas de Manobras</li>
+    <li>- Dicas de Produtos</li>
+    <li>- Ensinamento do básico ao avançado</li>
+  </ul>
+  <span><h3>Registre-se no link abaixo:</h3></span>
+  <a href= "registro.html" target = "_blank"> <img src = "img/aqui.png"/> </a>
+</div>
+
+<div id = "card2">
+  <img src = "img/sortee.png"/>
+  <h3>Concorra a sorteios de prêmios exclusivos</h3>
+  <ul>
+    <li>- Pranchas</li>
+    <li>- Quilhas</li>
+    <li>- Cursos exclusivos</li>
+    <li>- Viagens totalmente gratuitas</li>
+  </ul>
+  <span><h3>Registre-se no link abaixo:</h3></span>
+  <a href= "sorteio.html" target = "_blank"> <img src = "img/aqui.png"/> </a>
+</div>
+
+
+<div id = "final">
+<span class="badge bg-primary">Projeto 4° Bimestre</span>
+<span class="badge bg-info text-dark">Guilherme Monteiro e Thais</span>
+</div>
+
+
+
+
+</body>
+</html>
